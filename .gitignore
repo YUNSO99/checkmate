@@ -1,1 +1,5 @@
-node_modules
+client/node_modules/
+client/debug.log
+node_modules/
+config/default.json
+package-lock.json

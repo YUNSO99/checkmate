@@ -1,4 +1,4 @@
-.latest-news {
+.mate {
     background: red;
     border-radius: 0 !important;
     background: #174260;
@@ -6,7 +6,7 @@
     padding: 32px;
   }
   
-  .latest-news-badge {
+  .badge {
     margin-right: 0.92857143em;
     color: #fff;
     background: #00aeb3;
@@ -23,7 +23,7 @@
   }
   
   @media all and (max-width: 750px) {
-    .latest-news-text {    
+    .text {    
       float: left;
       margin-top: 0.5rem;
     }

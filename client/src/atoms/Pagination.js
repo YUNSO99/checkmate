@@ -93,7 +93,7 @@ const Paginations = ({
       if (i < 6) {
         return { page: startPage + i, value: false };
       }
-      if (i === 6) {
+      else {
         return { page: totalPages, value: true };
       }
     });

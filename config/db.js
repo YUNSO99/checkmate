@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
 const config = require('config');
-process.env["NODE_CONFIG_DIR"] = __dirname;
-
+const db = config.get('mongoURI');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://yunso:9914@chekmate-shard-00-00.l2etq.mongodb.net:27017,chekmate-shard-00-01.l2etq.mongodb.net:27017,chekmate-shard-00-02.l2etq.mongodb.net:27017/?ssl=true&replicaSet=atlas-7vmnev-shard-0&authSource=admin&retryWrites=true&w=majority", {
+    await mongoose.connect(db, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
